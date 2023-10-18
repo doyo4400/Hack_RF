@@ -21,3 +21,10 @@ sudo apt install gqrx-sdr -y
 #VER=$(curl --silent -qI https://github.com/gqrx-sdr/gqrx/releases/latest | tr -d '\r' | awk -F '/' '/^location/ {print  substr($NF, 2, length($NF)-1)}');
 #wget -P $HOME/hackrfonetools/gqrx-sdr https://github.com/gqrx-sdr/gqrx/releases/download/v${VER}/Gqrx-${VER}-x86_64.AppImage 
 #chmod +x $HOME/hackrfonetools/gqrx-sdr/Gqrx-${VER}-x86_64.AppImage 
+
+# install URH (universal radio hacker)
+python3 -m pip install --upgrade pip
+python3 -m pip install urh
+# update : python3 -m pip install --upgrade urh
+
+# if you forget to add pip in path : export PATH=$PATH:/home/$USER/.local/bin
